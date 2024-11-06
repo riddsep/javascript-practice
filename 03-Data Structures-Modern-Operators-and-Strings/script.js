@@ -242,3 +242,40 @@ const books = [
 // const ratingStars = [63405, 1808];
 // const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 // console.log(threeStarRatings);
+
+// Destructuring Object
+
+// const { title, author, ISBN } = books[0];
+// console.log(title, author, ISBN);
+
+// const { keywords: tags } = books[0];
+// console.log(tags);
+
+// const { programmingLanguage = "Unknown", language } = books[6];
+// console.log(programmingLanguage);
+
+// let bookTitle = "unknown";
+// let bookAuthor = "unknown";
+
+// ({ title: bookTitle, author: bookAuthor } = books[0]);
+
+// console.log(bookTitle);
+// console.log(bookAuthor);
+
+const {
+  thirdParty: {
+    goodreads: { rating: bookRating },
+  },
+} = books[0];
+console.log(bookRating);
+
+const printBookInfo = function ({ title, author, year = "unknown" }) {
+  return `${title} by ${author}, ${year}`;
+};
+console.log(
+  printBookInfo({
+    title: "Algorithms",
+    author: "Robert Sedgewick",
+    year: "2011",
+  })
+);
