@@ -262,20 +262,20 @@ const books = [
 // console.log(bookTitle);
 // console.log(bookAuthor);
 
-const {
-  thirdParty: {
-    goodreads: { rating: bookRating },
-  },
-} = books[0];
-console.log(bookRating);
+// const {
+//   thirdParty: {
+//     goodreads: { rating: bookRating },
+//   },
+// } = books[0];
+// console.log(bookRating);
 
-const printBookInfo = function ({ title, author, year = "unknown" }) {
-  return `${title} by ${author}, ${year}`;
-};
-console.log(
-  printBookInfo({
-    title: "Algorithms",
-    author: "Robert Sedgewick",
-    year: "2011",
-  })
-);
+// const printBookInfo = function ({ title, author, year = "unknown" }) {
+//   return `${title} by ${author}, ${year}`;
+// };
+// console.log(
+//   printBookInfo({
+//     title: "Algorithms",
+//     author: "Robert Sedgewick",
+//     year: "2011",
+//   })
+// );
