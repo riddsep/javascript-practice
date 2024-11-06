@@ -279,3 +279,13 @@ const books = [
 //     year: "2011",
 //   })
 // );
+
+// Spread Operator
+
+// const bookAuthors = [...books[0].author, ...books[1].author];
+// console.log(bookAuthors);
+
+// const spellWord = function (word) {
+//   console.log(...word);
+// };
+// spellWord("Javascript");
