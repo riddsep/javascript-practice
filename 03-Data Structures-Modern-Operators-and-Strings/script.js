@@ -282,10 +282,10 @@ const books = [
 
 // Spread Operator
 
-const bookAuthors = [...books[0].author, ...books[1].author];
-console.log(bookAuthors);
+// const bookAuthors = [...books[0].author, ...books[1].author];
+// console.log(bookAuthors);
 
-const spellWord = function (word) {
-  console.log(...word);
-};
-spellWord("Javascript");
+// const spellWord = function (word) {
+//   console.log(...word);
+// };
+// spellWord("Javascript");
