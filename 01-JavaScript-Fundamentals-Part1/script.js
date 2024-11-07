@@ -59,9 +59,9 @@
 //     console.log("Great language too :D");
 //     break;
 // }
-const population = 34;
-const str =
-  population > 33
-    ? "Portugal's population is above average"
-    : "Portugal's population is below average";
-console.log(str);
+// const population = 34;
+// const str =
+//   population > 33
+//     ? "Portugal's population is above average"
+//     : "Portugal's population is below average";
+// console.log(str);
