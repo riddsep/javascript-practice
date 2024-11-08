@@ -299,4 +299,5 @@ for (const flight of flights.split("+")) {
     .replaceAll(";", " ")
     .trimStart()
     .split(" ");
+  console.log(departures);
 }
