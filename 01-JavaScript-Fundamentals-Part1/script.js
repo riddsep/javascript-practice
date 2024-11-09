@@ -88,9 +88,13 @@ const calculateTotal = function (price, quantity) {
 };
 
 const isPalindrome = function (word) {
+  //   ubah word menjadi huruf kecil
   const toLowerCase = word.toLowerCase();
+  //   ubah word menjadi array
   const a = toLowerCase.split("");
+  //   balik array
   const aReverse = a.reverse();
+  //   kembalikan bool apakah array awal sama dengan array balik
   return toLowerCase === aReverse.join("");
 };
 
