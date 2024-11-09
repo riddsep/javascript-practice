@@ -94,5 +94,18 @@ const isPalindrome = function (word) {
   return toLowerCase === aReverse.join("");
 };
 
-console.log(isPalindrome("0iSisI0")); // Output: true
-console.log(isPalindrome("hahah")); // Output: false
+const fizzBuzz = function (numbers) {
+  for (let i = 1; i <= numbers; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("buzz");
+    } else {
+      console.log(i);
+    }
+  }
+};
+
+fizzBuzz(20);
