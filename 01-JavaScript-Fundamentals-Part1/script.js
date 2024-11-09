@@ -71,14 +71,3 @@
 // Ada diskon 10% untuk setiap pembelian dengan total di atas 500 ribu.
 // Pajak yang dikenakan adalah 11% dari total harga setelah diskon (jika ada).
 // Kamu perlu menampilkan harga sebelum diskon, harga setelah diskon, dan total harga setelah pajak.
-
-const totalCost = function (price) {
-  const discount = price > 500000 ? price * 0.1 : 0;
-  const after = price - discount;
-  const tax = after * 0.11;
-  const total = after + tax;
-
-  return `Harga Barang: ${price}, Discount: ${after}, Pajak: ${tax}, Total: ${total}`;
-};
-console.log(totalCost(400000));
-console.log(totalCost(600000));
