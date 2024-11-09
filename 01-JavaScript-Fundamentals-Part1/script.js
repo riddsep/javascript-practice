@@ -86,4 +86,13 @@ const calculateTotal = function (price, quantity) {
     discount ? discount : `-`
   }\nHarga Setelah Discount: ${priceAfterDiscount}\nPPN: ${tax}\nTotal akhir: ${total}`;
 };
-console.log(calculateTotal(25000, 6));
+
+const isPalindrome = function (word) {
+  const toLowerCase = word.toLowerCase();
+  const a = toLowerCase.split("");
+  const aReverse = a.reverse();
+  return toLowerCase === aReverse.join("");
+};
+
+console.log(isPalindrome("0iSisI0")); // Output: true
+console.log(isPalindrome("hahah")); // Output: false
