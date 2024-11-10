@@ -309,16 +309,3 @@ const books = [
 //   // This generates [0, 0, 0, 0]. More in the next section!
 //   answers: new Array(4).fill(0),
 // };
-
-// poll.registerNewAnswer = function () {
-//   const userAnswer = Number(
-//     prompt(`${this.question}\n${this.options.join("\n")}`)
-//   );
-//   for (const [i] of this.answers.entries()) {
-//     if (i === userAnswer) {
-//       this.answers[i]++;
-//     }
-//     this.displayResults(this.answers);
-//   }
-//   console.log(this.answers);
-// };
