@@ -323,12 +323,12 @@ const books = [
 //   console.log(this.answers);
 // };
 
-poll.displayResults = function (type) {
-  return Array.isArray(type)
-    ? `Poll results are : ${type}`
-    : `Poll results are: `;
-};
+// poll.displayResults = function (type) {
+//   return Array.isArray(type)
+//     ? `Poll results are : ${type}`
+//     : `Poll results are: `;
+// };
 
-document
-  .querySelector(".poll")
-  .addEventListener("click", poll.registerNewAnswer.bind(poll));
+// document
+//   .querySelector(".poll")
+//   .addEventListener("click", poll.registerNewAnswer.bind(poll));
