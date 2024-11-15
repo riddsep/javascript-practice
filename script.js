@@ -61,3 +61,34 @@ function update(location) {
   button3.onclick = location["button functions"][2];
   text.innerText = location.text;
 }
+
+function fightDragon() {
+  console.log("Fighting dragon.");
+}
+
+function buyHealth() {
+  if (gold >= 10) {
+    gold -= 10;
+    health += 10;
+    goldText.innerText = gold;
+    healthText.innerText = health;
+  } else {
+    text.innerText = "You do not have enough gold to buy health.";
+  }
+}
+
+function buyWeapon() {
+  if (gold >= 30) {
+    gold -= 30;
+    currentWeaponIndex++;
+    goldText.innerText = gold;
+    let newWeapon = weapons[currentWeaponIndex].name;
+    text.innerText = "You now have a " + newWeapon + ".";
+    inventory.push(newWeapon);
+    text.innerText += " In your inventory you have: ";
+  }
+}
+
+function fightSlime() {}
+
+function fightBeast() {}
