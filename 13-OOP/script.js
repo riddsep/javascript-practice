@@ -13,3 +13,7 @@ Hero.prototype.isMeta = function (statusMeta = false) {
 
 const hayabusa = new Hero("Hayabusa", "Easy");
 const fanny = new Hero("fanny", "God");
+
+console.log(hayabusa.__proto__ === fanny.__proto__);
+
+console.log(hayabusa.isMeta(true));
