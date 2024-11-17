@@ -12,3 +12,4 @@ Hero.prototype.isMeta = function (statusMeta = false) {
 };
 
 const hayabusa = new Hero("Hayabusa", "Easy");
+const fanny = new Hero("fanny", "God");
