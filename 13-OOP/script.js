@@ -11,4 +11,4 @@ Hero.prototype.isMeta = function (statusMeta = false) {
   }, and it is currently ${this.meta ? "a Top pick now!" : "Not OP"}`;
 };
 
-const hayabusa = new Hero("Hayabusa", "Hard");
+const hayabusa = new Hero("Hayabusa", "Easy");
