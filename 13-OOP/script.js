@@ -1,13 +1,14 @@
 const Hero = function (name, difficulty) {
   this.name = name;
   this.difficulty = difficulty;
+  this.meta = false;
 };
 
-Hero.prototype.isMeta = function (meta) {
-  this.meta = meta;
-  return `You create ${this.name}. with difficulty ${
+Hero.prototype.isMeta = function (statusMeta) {
+  this.meta = statusMeta;
+  return `You created ${this.name} with difficulty ${
     this.difficulty
-  }, where its ${this.meta ? "Top pick now" : "Not OP"}`;
+  }, and it is currently ${this.meta ? "a Top pick now!" : "Not OP"}`;
 };
 
 const hayabusa = new Hero("Hayabusa", "Hard");
