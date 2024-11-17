@@ -134,12 +134,12 @@ function sellWeapon() {
   }
 }
 
-// function fightSlime() {}
+function fightSlime() {}
 
-// function fightBeast() {}
+function fightBeast() {}
 
-// function fightDragon() {
-//   console.log("Fighting dragon.");
-// }
+function fightDragon() {
+  console.log("Fighting dragon.");
+}
 
-// function goFight() {}
+function goFight() {}
