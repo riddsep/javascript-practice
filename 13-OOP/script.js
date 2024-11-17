@@ -4,7 +4,7 @@ const Hero = function (name, difficulty) {
   this.meta = false;
 };
 
-Hero.prototype.isMeta = function (statusMeta) {
+Hero.prototype.isMeta = function (statusMeta = false) {
   this.meta = statusMeta;
   return `You created ${this.name} with difficulty ${
     this.difficulty
