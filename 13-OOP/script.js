@@ -33,3 +33,29 @@
 // console.log(bmw.accelerate());
 // console.log(bmw.accelerate());
 // console.log(bmw.break());
+
+class Person {
+  constructor(name, birthday, job) {
+    this.name = name;
+    this.birthday = birthday;
+    this.job = job;
+  }
+
+  calcAge() {
+    return 2030 - this.birthday;
+  }
+
+  currentJob() {
+    return `Hi!. my current job is ${this.job}`;
+  }
+
+  resume() {
+    return `Hi, my name is ${this.name}. Im ${this.calcAge()}`;
+  }
+}
+
+const rido = new Person("Rido", 2001, "Software Engineer");
+
+console.log(rido);
+console.log(rido.calcAge());
+console.log(rido.resume());
