@@ -1,20 +1,20 @@
-// const account = {
-//   owner: "Jonas",
-//   movements: [200, 530, 120, 300],
+// // const account = {
+// //   owner: "Jonas",
+// //   movements: [200, 530, 120, 300],
 
-//   get latest() {
-//     return this.movements.slice(-1).pop();
-//   },
+// //   get latest() {
+// //     return this.movements.slice(-1).pop();
+// //   },
 
-//   set latest(mov) {
-//     this.movements.push(mov);
-//   },
-// };
+// //   set latest(mov) {
+// //     this.movements.push(mov);
+// //   },
+// // };
 
-// console.log(account.latest);
+// // console.log(account.latest);
 
-// account.latest = 50;
-// console.log(account.movements);
+// // account.latest = 50;
+// // console.log(account.movements);
 
 // class Person {
 //   constructor(fullName, birthYear) {
@@ -46,7 +46,20 @@
 // }
 
 // const rido = new Person("Rido Septiawan", 2001);
-// console.log(rido.calcAge());
-// console.log(rido.age);
-// console.log(rido.fullName);
-// console.log(rido);
+
+// const Book = function (title, author, pages, birthYear) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.birthYear = birthYear;
+// };
+
+// Book.prototype.info = function () {
+//   return `"${this.title} by ${this.author}, ${this.pages} pages, not read yet"`;
+// };
+
+// const theHobbit = new Book("The Hobbit", "J.R.R. Tolkien", 295, 1990);
+
+// console.log(theHobbit.info());
+// console.log(Object.setPrototypeOf(Book.prototype, Person.prototype));
+// console.log(Object.getPrototypeOf(Book.prototype));
