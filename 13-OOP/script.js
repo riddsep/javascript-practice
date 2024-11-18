@@ -1,35 +1,52 @@
-const account = {
-  owner: "Jonas",
-  movements: [200, 530, 120, 300],
+// const account = {
+//   owner: "Jonas",
+//   movements: [200, 530, 120, 300],
 
-  get latest() {
-    return this.movements.slice(-1).pop();
-  },
+//   get latest() {
+//     return this.movements.slice(-1).pop();
+//   },
 
-  set latest(mov) {
-    this.movements.push(mov);
-  },
-};
+//   set latest(mov) {
+//     this.movements.push(mov);
+//   },
+// };
 
-console.log(account.latest);
+// console.log(account.latest);
 
-account.latest = 50;
-console.log(account.movements);
+// account.latest = 50;
+// console.log(account.movements);
 
-class Person {
-  constructor(firstName, birthYear) {
-    this.firstName = firstName;
-    this.birthYear = birthYear;
-  }
+// class Person {
+//   constructor(fullName, birthYear) {
+//     this.fullName = fullName;
+//     this.birthYear = birthYear;
+//   }
 
-  calcAge() {
-    return 2037 - this.birthYear;
-  }
+//   calcAge() {
+//     return 2037 - this.birthYear;
+//   }
 
-  greet() {
-    return `Hey ${this.firstName}`;
-  }
-}
+//   greet() {
+//     return `Hey ${this.fullName}`;
+//   }
 
-const rido = new Person("Rido", 2001);
-console.log(rido.calcAge());
+//   get age() {
+//     return 2037 - this.birthYear;
+//   }
+
+//   set fullName(name) {
+//     console.log(name);
+//     if (name.includes(" ")) this._fullName = name;
+//     else alert(`${name} is not a fullname`);
+//   }
+
+//   get fullName() {
+//     return this._fullName;
+//   }
+// }
+
+// const rido = new Person("Rido Septiawan", 2001);
+// console.log(rido.calcAge());
+// console.log(rido.age);
+// console.log(rido.fullName);
+// console.log(rido);
