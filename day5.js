@@ -55,9 +55,9 @@
 
 // const fullStack = [...frontEnd, ...backEnd];
 
-// console.log(fullStack);
-// const ages = [1000, 19, 24, 20, 25, 26, 24, 25, 24];
-// ages.sort((a, b) => b - a);
-// const min = ages[0];
-// const max = ages.at(-1);
-// console.log(min, max);
+console.log(fullStack);
+const ages = [1000, 19, 24, 20, 25, 26, 24, 25, 24];
+ages.sort((a, b) => b - a);
+const min = ages[0];
+const max = ages.at(-1);
+console.log(min, max);
