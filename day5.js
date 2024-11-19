@@ -10,3 +10,15 @@
 //     ? [arr[middleIndex - 1], arr[middleIndex]]
 //     : arr[middleIndex];
 // console.log(first, ...middle, last);
+
+// let text =
+//   "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+// const word = text.replace(/[,.]/g, "").split(" ");
+
+// console.log(word.length);
+// const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+// shoppingCart.unshift("Meat");
+// shoppingCart.push("Sugar");
+// shoppingCart.splice(-2, 1);
+// shoppingCart[shoppingCart.indexOf("Tea")] = "Green Tea";
+// console.log(shoppingCart);
