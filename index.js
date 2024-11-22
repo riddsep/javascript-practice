@@ -50,3 +50,16 @@ const products = [
     price: 99.99,
   },
 ];
+
+const displayProducts = function () {
+  products.map((p) =>
+    console.log(`No.${p.id} Nama Produk: ${p.name} Harga Produk: ${p.price}`)
+  );
+};
+
+displayProducts();
+
+const addToCart = function (productId, totalProduct) {
+  const matchingProduct = products.find((p) => p.id === productId);
+};
+addToCart(1, 4);
