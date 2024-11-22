@@ -68,3 +68,25 @@ const displayProducts = function (products) {
     )
   );
 };
+
+const addToCart = function (productId, totalProduct) {
+  const matchingProduct = products.find((p) => p.id === productId);
+  let paymentTotal = 0;
+
+  if (matchingProduct) {
+    if (matchingProduct.total >= totalProduct) {
+      matchingProduct.total -= totalProduct;
+      paymentTotal += matchingProduct.price * totalProduct;
+
+      console.log(
+        `Telah menambahkan ${matchingProduct.name} sebanyak ${totalProduct} pieces. Total Pembayaran ${paymentTotal}`
+      );
+      displayProducts([matchingProduct]);
+    } else {
+      console.log(`Product tidak cukup`);
+    }
+  }
+};
+addToCart(1, 3);
+
+const tax = (bill) => bill * 0.1;
