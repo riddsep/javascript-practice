@@ -223,19 +223,19 @@ const books = [
   },
 ];
 
-// const [firstBook, secondBook] = books;
-// const [, , thirdBook] = books;
+const [firstBook, secondBook] = books;
+const [, , thirdBook] = books;
 
-// const ratings = [
-//   ["rating", 4.19],
-//   ["ratingsCount", 144584],
-// ];
-// const [[, rating], [, ratingCount]] = ratings;
+const ratings = [
+  ["rating", 4.19],
+  ["ratingsCount", 144584],
+];
+const [[, rating], [, ratingCount]] = ratings;
 
-// const ratingStars = [63405, 1808];
-// const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+const ratingStars = [63405, 1808];
+const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 
-// const { title, author, ISBN, keywords: tags } = books[0];
+const { title, author, ISBN, keywords: tags } = books[0];
 
 const { language, programmingLanguage = "unknown" } = books[6];
 
