@@ -223,46 +223,46 @@ const books = [
   },
 ];
 
-const [firstBook, secondBook] = books;
-const [, , thirdBook] = books;
+// const [firstBook, secondBook] = books;
+// const [, , thirdBook] = books;
 
-const ratings = [
-  ["rating", 4.19],
-  ["ratingsCount", 144584],
-];
-const [[, rating], [, ratingCount]] = ratings;
+// const ratings = [
+//   ["rating", 4.19],
+//   ["ratingsCount", 144584],
+// ];
+// const [[, rating], [, ratingCount]] = ratings;
 
-const ratingStars = [63405, 1808];
-const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
+// const ratingStars = [63405, 1808];
+// const [fiveStarRatings, oneStarRatings, threeStarRatings = 0] = ratingStars;
 
-const { title, author, ISBN, keywords: tags } = books[0];
+// const { title, author, ISBN, keywords: tags } = books[0];
 
-const { language, programmingLanguage = "unknown" } = books[6];
+// const { language, programmingLanguage = "unknown" } = books[6];
 
-let bookTitle = "unknown";
-let bookAuthor = "unknown";
+// let bookTitle = "unknown";
+// let bookAuthor = "unknown";
 
-({ title: bookTitle, author: bookAuthor } = books[0]);
+// ({ title: bookTitle, author: bookAuthor } = books[0]);
 
-const {
-  thirdParty: {
-    goodreads: { rating: bookRating },
-  },
-} = books[0];
-console.log(bookRating);
+// const {
+//   thirdParty: {
+//     goodreads: { rating: bookRating },
+//   },
+// } = books[0];
+// console.log(bookRating);
 
-const printBookInfo = function ({ title, author, year = "year unknown" }) {
-  console.log(`${title} by ${author}, ${year}`);
-};
-printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+// const printBookInfo = function ({ title, author, year = "year unknown" }) {
+//   console.log(`${title} by ${author}, ${year}`);
+// };
+// printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
 
-const bookAuthors = [...books[0].author, ...books[1].author];
+// const bookAuthors = [...books[0].author, ...books[1].author];
 
-console.log(bookAuthors);
+// console.log(bookAuthors);
 
-const spellWord = function (str) {
-  console.log(...str);
-};
-spellWord("JavaScript");
+// const spellWord = function (str) {
+//   console.log(...str);
+// };
+// spellWord("JavaScript");
 
 ///////////////////////////////////////////////////////
