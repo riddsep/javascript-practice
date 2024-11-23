@@ -237,32 +237,32 @@ const books = [
 
 // const { title, author, ISBN, keywords: tags } = books[0];
 
-// const { language, programmingLanguage = "unknown" } = books[6];
+const { language, programmingLanguage = "unknown" } = books[6];
 
-// let bookTitle = "unknown";
-// let bookAuthor = "unknown";
+let bookTitle = "unknown";
+let bookAuthor = "unknown";
 
-// ({ title: bookTitle, author: bookAuthor } = books[0]);
+({ title: bookTitle, author: bookAuthor } = books[0]);
 
-// const {
-//   thirdParty: {
-//     goodreads: { rating: bookRating },
-//   },
-// } = books[0];
-// console.log(bookRating);
+const {
+  thirdParty: {
+    goodreads: { rating: bookRating },
+  },
+} = books[0];
+console.log(bookRating);
 
-// const printBookInfo = function ({ title, author, year = "year unknown" }) {
-//   console.log(`${title} by ${author}, ${year}`);
-// };
-// printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+const printBookInfo = function ({ title, author, year = "year unknown" }) {
+  console.log(`${title} by ${author}, ${year}`);
+};
+printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
 
-// const bookAuthors = [...books[0].author, ...books[1].author];
+const bookAuthors = [...books[0].author, ...books[1].author];
 
-// console.log(bookAuthors);
+console.log(bookAuthors);
 
-// const spellWord = function (str) {
-//   console.log(...str);
-// };
-// spellWord("JavaScript");
+const spellWord = function (str) {
+  console.log(...str);
+};
+spellWord("JavaScript");
 
 ///////////////////////////////////////////////////////
