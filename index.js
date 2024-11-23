@@ -260,9 +260,9 @@ const books = [
 
 // console.log(bookAuthors);
 
-const spellWord = function (str) {
-  console.log(...str);
-};
-spellWord("JavaScript");
+// const spellWord = function (str) {
+//   console.log(...str);
+// };
+// spellWord("JavaScript");
 
 ///////////////////////////////////////////////////////
