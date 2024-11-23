@@ -250,3 +250,19 @@ const books = [
 //   },
 // } = books[0];
 // console.log(bookRating);
+
+// const printBookInfo = function ({ title, author, year = "year unknown" }) {
+//   console.log(`${title} by ${author}, ${year}`);
+// };
+// printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+
+// const bookAuthors = [...books[0].author, ...books[1].author];
+
+// console.log(bookAuthors);
+
+// const spellWord = function (str) {
+//   console.log(...str);
+// };
+// spellWord("JavaScript");
+
+///////////////////////////////////////////////////////
