@@ -305,39 +305,35 @@ const books = [
 
 // ({ rating, ratingsCount } = books[0].thirdParty.goodreads);
 // console.log(rating, ratingsCount);
-const { rating: r, ratingsCount: rc } = books[0].thirdParty.goodreads;
-console.log(r, rc);
+// const { rating: r, ratingsCount: rc } = books[0].thirdParty.goodreads;
 
-let bookTitle = "unknown";
-let bookAuthor = "unknown";
-({ title: bookTitle, author: bookAuthor } = books[0]);
+// let bookTitle = "unknown";
+// let bookAuthor = "unknown";
+// ({ title: bookTitle, author: bookAuthor } = books[0]);
 
-console.log(bookTitle, bookAuthor);
-const {
-  thirdParty: {
-    goodreads: { rating: bookRating },
-  },
-} = books[0];
-console.log(bookRating);
+// console.log(bookTitle, bookAuthor);
+// const {
+//   thirdParty: {
+//     goodreads: { rating: bookRating },
+//   },
+// } = books[0];
 
-const printBookInfo = function ({ title, author, year = "Year unknown" }) {
-  console.log(`${title} by ${author}, ${year}`);
-};
-printBookInfo({
-  title: "Algorithms",
-  author: "Robert Sedgewick",
-  year: "2011",
-});
-printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+// const printBookInfo = function ({ title, author, year = "Year unknown" }) {
+//   console.log(`${title} by ${author}, ${year}`);
+// };
+// printBookInfo({
+//   title: "Algorithms",
+//   author: "Robert Sedgewick",
+//   year: "2011",
+// });
+// printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
 
-const a = [1, 2, 3, 4];
-const b = [5, 6, 7, 8];
-console.log(...a, ...b);
+// const a = [1, 2, 3, 4];
+// const b = [5, 6, 7, 8];
 
-const rido = {
-  name: "Rido Septiawan",
-  usia: 23,
-};
+// const rido = {
+//   name: "Rido Septiawan",
+//   usia: 23,
+// };
 
-const ridos = { ...rido, specialist: "Frontend" };
-console.log(ridos, rido);
+// const ridos = { ...rido, specialist: "Frontend" };
