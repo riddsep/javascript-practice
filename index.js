@@ -266,3 +266,74 @@ const books = [
 // spellWord("JavaScript");
 
 ///////////////////////////////////////////////////////
+
+// const person = {
+//   name: "Rido Septiawan",
+//   language: ["HTML", "CSS", "Javascript", "Tailwind", "React", "Saass"],
+
+//   skill(s1, s2) {
+//     return [this.language[s1], this.language[s2]];
+//   },
+// };
+// const [main, second] = person.skill(2, 4);
+
+// const [x, y, z = 1] = [8, 9];
+
+// const [i, , [j, k]] = [1, 2, [3, 4]];
+
+// const ratings = [
+//   ["rating", 4.19],
+//   ["ratingsCount", 144584],
+// ];
+
+// const [[, rating], [, ratingCount]] = ratings;
+
+// const {
+//   ISBN: id,
+//   title,
+//   language,
+//   skill: sk = 1,
+//   thirdParty: {
+//     goodreads: { rating, reviewsCount, ratingsCount },
+//   },
+// } = books[0];
+// console.log(rating, reviewsCount, ratingsCount);
+
+// console.log(books[0].thirdParty.goodreads);
+// let rating = 5;
+// let ratingsCount = 10;
+
+// ({ rating, ratingsCount } = books[0].thirdParty.goodreads);
+// console.log(rating, ratingsCount);
+// const { rating: r, ratingsCount: rc } = books[0].thirdParty.goodreads;
+
+// let bookTitle = "unknown";
+// let bookAuthor = "unknown";
+// ({ title: bookTitle, author: bookAuthor } = books[0]);
+
+// console.log(bookTitle, bookAuthor);
+// const {
+//   thirdParty: {
+//     goodreads: { rating: bookRating },
+//   },
+// } = books[0];
+
+// const printBookInfo = function ({ title, author, year = "Year unknown" }) {
+//   console.log(`${title} by ${author}, ${year}`);
+// };
+// printBookInfo({
+//   title: "Algorithms",
+//   author: "Robert Sedgewick",
+//   year: "2011",
+// });
+// printBookInfo({ title: "Algorithms", author: "Robert Sedgewick" });
+
+// const a = [1, 2, 3, 4];
+// const b = [5, 6, 7, 8];
+
+// const rido = {
+//   name: "Rido Septiawan",
+//   usia: 23,
+// };
+
+// const ridos = { ...rido, specialist: "Frontend" };
