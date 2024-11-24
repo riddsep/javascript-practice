@@ -378,3 +378,18 @@ const game = {
     team2: 6.5,
   },
 };
+
+const [player1, player2] = game.players;
+const [gk, ...fieldPlayers] = player1;
+const allPlayers = [...player1, ...player2];
+const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
+
+const { team1, x: draw, team2 } = game.odds;
+console.log(draw);
+
+const printGoals = function (p1, p2, p3, p4) {
+  console.log(p1, p2, p3, p4);
+};
+printGoals(...game.scored);
+
+console.log(game.odds.team1 > game.odds.team2 && game.team1);
