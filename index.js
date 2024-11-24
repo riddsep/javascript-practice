@@ -385,7 +385,6 @@ const allPlayers = [...player1, ...player2];
 const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
 
 const { team1, x: draw, team2 } = game.odds;
-console.log(draw);
 
 const printGoals = function (p1, p2, p3, p4) {
   console.log(p1, p2, p3, p4);
