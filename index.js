@@ -266,3 +266,18 @@ const books = [
 // spellWord("JavaScript");
 
 ///////////////////////////////////////////////////////
+
+const person = {
+  name: "Rido Septiawan",
+  language: ["HTML", "CSS", "Javascript", "Tailwind", "React", "Saass"],
+
+  skill(s1, s2) {
+    return [this.language[s1], this.language[s2]];
+  },
+};
+const [main, second] = person.skill(2, 4);
+
+console.log(main, second);
+
+const [x, y, z = 1] = [8, 9];
+console.log(x, y, z);
