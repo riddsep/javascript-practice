@@ -395,16 +395,16 @@ const game = {
 
 // console.log(game.odds.team1 > game.odds.team2 && game.team1);
 
-const [player1] = game.players;
+// const [player1] = game.players;
 
-for (const [i, el] of player1.entries()) {
-  if (i < 1) {
-    console.log(`${el} is Goal Keeper`);
-  } else if (i < 5) {
-    console.log(`${el} is Deffender`);
-  } else if (i < 8) {
-    console.log(`${el} is Midfielder`);
-  } else {
-    console.log(`${el} is Attacker`);
-  }
-}
+// for (const [i, el] of player1.entries()) {
+//   if (i < 1) {
+//     console.log(`${el} is Goal Keeper`);
+//   } else if (i < 5) {
+//     console.log(`${el} is Deffender`);
+//   } else if (i < 8) {
+//     console.log(`${el} is Midfielder`);
+//   } else {
+//     console.log(`${el} is Attacker`);
+//   }
+// }
