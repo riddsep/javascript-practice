@@ -484,3 +484,13 @@ const books = [
 //     `Odd of ${team === "x" ? "draw" : `victory ${game[team]}`} ${odd}`
 //   );
 // }
+
+const hitungFaktorial = function (n) {
+  let faktorial = 1;
+  for (let i = 1; i <= n; i++) {
+    faktorial *= i;
+  }
+  return faktorial;
+};
+console.log(hitungFaktorial(5)); // Output: 120
+console.log(hitungFaktorial(3)); // Output: 6
