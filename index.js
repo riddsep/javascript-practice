@@ -379,18 +379,32 @@ const game = {
   },
 };
 
-const [player1, player2] = game.players;
-const [gk, ...fieldPlayers] = player1;
-const allPlayers = [...player1, ...player2];
-const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
+// const [player1, player2] = game.players;
+// const [gk, ...fieldPlayers] = player1;
+// const allPlayers = [...player1, ...player2];
+// const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
 
-const {
-  odds: { team1, x: draw, team2 },
-} = game;
+// const {
+//   odds: { team1, x: draw, team2 },
+// } = game;
 
-const printGoals = function (...scored) {
-  console.log(scored.length);
-};
-printGoals(...game.scored);
+// const printGoals = function (...scored) {
+//   console.log(scored.length);
+// };
+// printGoals(...game.scored);
 
-console.log(game.odds.team1 > game.odds.team2 && game.team1);
+// console.log(game.odds.team1 > game.odds.team2 && game.team1);
+
+const [player1] = game.players;
+
+for (const [i, el] of player1.entries()) {
+  if (i < 1) {
+    console.log(`${el} is Goal Keeper`);
+  } else if (i < 5) {
+    console.log(`${el} is Deffender`);
+  } else if (i < 8) {
+    console.log(`${el} is Midfielder`);
+  } else {
+    console.log(`${el} is Attacker`);
+  }
+}
