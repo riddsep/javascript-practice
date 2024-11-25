@@ -495,14 +495,20 @@ const books = [
 // console.log(hitungFaktorial(5)); // Output: 120
 // console.log(hitungFaktorial(3)); // Output: 6
 
-const filterGanjil = function (arr) {
-  let odd = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 !== 0) {
-      odd.push(arr[i]);
-    }
-  }
-  return odd;
+// const filterGanjil = function (arr) {
+//   let odd = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       odd.push(arr[i]);
+//     }
+//   }
+//   return odd;
+// };
+// console.log(filterGanjil([1, 2, 3, 4, 5])); // Output: [1, 3, 5]
+// console.log(filterGanjil([10, 13, 15, 20])); // Output: [13, 15]
+
+const balikString = function (str) {
+  return str.split("").reverse().join("");
 };
-console.log(filterGanjil([1, 2, 3, 4, 5])); // Output: [1, 3, 5]
-console.log(filterGanjil([10, 13, 15, 20])); // Output: [13, 15]
+console.log(balikString("hello")); // Output: "olleh"
+console.log(balikString("Rido")); // Output: "odiR"
