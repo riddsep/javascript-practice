@@ -384,10 +384,12 @@ const [gk, ...fieldPlayers] = player1;
 const allPlayers = [...player1, ...player2];
 const players1Final = ["Thiago", "Coutinho", "Perisic", ...player1];
 
-const { team1, x: draw, team2 } = game.odds;
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
 
-const printGoals = function (p1, p2, p3, p4) {
-  console.log(p1, p2, p3, p4);
+const printGoals = function (...scored) {
+  console.log(scored.length);
 };
 printGoals(...game.scored);
 
