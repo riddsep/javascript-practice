@@ -485,12 +485,24 @@ const books = [
 //   );
 // }
 
-const hitungFaktorial = function (n) {
-  let faktorial = 1;
-  for (let i = 1; i <= n; i++) {
-    faktorial *= i;
+// const hitungFaktorial = function (n) {
+//   let faktorial = 1;
+//   for (let i = 1; i <= n; i++) {
+//     faktorial *= i;
+//   }
+//   return faktorial;
+// };
+// console.log(hitungFaktorial(5)); // Output: 120
+// console.log(hitungFaktorial(3)); // Output: 6
+
+const filterGanjil = function (arr) {
+  let odd = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      odd.push(arr[i]);
+    }
   }
-  return faktorial;
+  return odd;
 };
-console.log(hitungFaktorial(5)); // Output: 120
-console.log(hitungFaktorial(3)); // Output: 6
+console.log(filterGanjil([1, 2, 3, 4, 5])); // Output: [1, 3, 5]
+console.log(filterGanjil([10, 13, 15, 20])); // Output: [13, 15]
