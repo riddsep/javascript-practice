@@ -426,60 +426,115 @@ const books = [
 //   console.log(`The book "${title}" has ${authors.length} authors`);
 // };
 // printBookAuthorsCount("Algorithms", "Robert Sedgewick", "Kevin Wayne");
-const game = {
-  team1: "Bayern Munich",
-  team2: "Borrussia Dortmund",
-  players: [
-    [
-      "Neuer",
-      "Pavard",
-      "Martinez",
-      "Alaba",
-      "Davies",
-      "Kimmich",
-      "Goretzka",
-      "Coman",
-      "Muller",
-      "Gnarby",
-      "Lewandowski",
-    ],
-    [
-      "Burki",
-      "Schulz",
-      "Hummels",
-      "Akanji",
-      "Hakimi",
-      "Weigl",
-      "Witsel",
-      "Hazard",
-      "Brandt",
-      "Sancho",
-      "Gotze",
-    ],
-  ],
-  score: "4:0",
-  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
-  date: "Nov 9th, 2037",
-  odds: {
-    team1: 1.33,
-    x: 3.25,
-    team2: 6.5,
-  },
-};
+// const game = {
+//   team1: "Bayern Munich",
+//   team2: "Borrussia Dortmund",
+//   players: [
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+//   score: "4:0",
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+//   date: "Nov 9th, 2037",
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
 
-console.log(game.scored);
+// console.log(game.scored);
 
-for (const [i, el] of game.scored.entries()) {
-  console.log(`Goal ${i + 1}: ${el}`);
-}
+// for (const [i, el] of game.scored.entries()) {
+//   console.log(`Goal ${i + 1}: ${el}`);
+// }
 
-let avg = 0;
-for (const odd of Object.values(game.odds)) {
-  avg += odd;
-}
-console.log(avg);
+// let avg = 0;
+// for (const odd of Object.values(game.odds)) {
+//   avg += odd;
+// }
+// console.log(avg);
 
-for (const { team, odd } of Object.entries(game.odds)) {
-  console.log(team);
-  console.log(`Odd of `);
-}
+// for (const [team, odd] of Object.entries(game.odds)) {
+//   console.log(
+//     `Odd of ${team === "x" ? "draw" : `victory ${game[team]}`} ${odd}`
+//   );
+// }
+
+// const hitungFaktorial = function (n) {
+//   let faktorial = 1;
+//   for (let i = 1; i <= n; i++) {
+//     faktorial *= i;
+//   }
+//   return faktorial;
+// };
+// console.log(hitungFaktorial(5)); // Output: 120
+// console.log(hitungFaktorial(3)); // Output: 6
+
+// const filterGanjil = function (arr) {
+//   let odd = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       odd.push(arr[i]);
+//     }
+//   }
+//   return odd;
+// };
+// console.log(filterGanjil([1, 2, 3, 4, 5])); // Output: [1, 3, 5]
+// console.log(filterGanjil([10, 13, 15, 20])); // Output: [13, 15]
+
+// const balikString = function (str) {
+//   return str.split("").reverse().join("");
+// };
+// console.log(balikString("hello")); // Output: "olleh"
+// console.log(balikString("Rido")); // Output: "odiR"
+
+// const hitungVokal = function (str) {
+//   const vc = ["a", "e", "i", "o", "u"];
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (vc.includes(str[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(hitungVokal("programming")); // Output: 3
+// console.log(hitungVokal("javascript")); // Output: 3
+
+// const question = new Map([
+//   ["question", prompt("What is the best programming language in the world?")],
+//   [1, "C"],
+//   [2, "Javascript"],
+//   [3, "PHP"],
+//   [true, "Correct!"],
+//   [false, "Try again"],
+// ]);
+
+// const answer = question.get(+question.get("question"));
+
+// console.log(question.get(answer === "Javascript"));
