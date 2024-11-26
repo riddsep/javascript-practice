@@ -526,15 +526,15 @@ const books = [
 // console.log(hitungVokal("programming")); // Output: 3
 // console.log(hitungVokal("javascript")); // Output: 3
 
-const question = new Map([
-  ["question", prompt("What is the best programming language in the world?")],
-  [1, "C"],
-  [2, "Javascript"],
-  [3, "PHP"],
-  [true, "Correct!"],
-  [false, "Try again"],
-]);
+// const question = new Map([
+//   ["question", prompt("What is the best programming language in the world?")],
+//   [1, "C"],
+//   [2, "Javascript"],
+//   [3, "PHP"],
+//   [true, "Correct!"],
+//   [false, "Try again"],
+// ]);
 
-const answer = question.get(+question.get("question"));
+// const answer = question.get(+question.get("question"));
 
-console.log(question.get(answer === "Javascript"));
+// console.log(question.get(answer === "Javascript"));
