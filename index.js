@@ -507,8 +507,34 @@ const books = [
 // console.log(filterGanjil([1, 2, 3, 4, 5])); // Output: [1, 3, 5]
 // console.log(filterGanjil([10, 13, 15, 20])); // Output: [13, 15]
 
-const balikString = function (str) {
-  return str.split("").reverse().join("");
-};
-console.log(balikString("hello")); // Output: "olleh"
-console.log(balikString("Rido")); // Output: "odiR"
+// const balikString = function (str) {
+//   return str.split("").reverse().join("");
+// };
+// console.log(balikString("hello")); // Output: "olleh"
+// console.log(balikString("Rido")); // Output: "odiR"
+
+// const hitungVokal = function (str) {
+//   const vc = ["a", "e", "i", "o", "u"];
+//   let count = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     if (vc.includes(str[i])) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(hitungVokal("programming")); // Output: 3
+// console.log(hitungVokal("javascript")); // Output: 3
+
+const question = new Map([
+  ["question", prompt("What is the best programming language in the world?")],
+  [1, "C"],
+  [2, "Javascript"],
+  [3, "PHP"],
+  [true, "Correct!"],
+  [false, "Try again"],
+]);
+
+const answer = question.get(+question.get("question"));
+
+console.log(question.get(answer === "Javascript"));
