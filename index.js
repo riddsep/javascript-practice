@@ -556,8 +556,6 @@ const gameEvents = new Map([
 const events = [...gameEvents.values()];
 console.log(new Set(events));
 
-console.log(gameEvents.delete(64));
-
 console.log(`An event happened, on 
 average, every ${90 / gameEvents.size} minutes`);
 
