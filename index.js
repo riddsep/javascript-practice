@@ -651,8 +651,20 @@ const books = [
 //   // This generates [0, 0, 0, 0]. More in the next section!
 //   answers: new Array(4).fill(0),
 // };
-const user = {};
-user.name = "Jhon";
-user.surname = "Smith";
+// const user = {};
+// user.name = "Jhon";
+// user.surname = "Smith";
 
-console.log(user);
+// console.log(user);
+
+let schedule = {};
+
+alert(isEmpty(schedule)); // true
+
+schedule["8:30"] = "get up";
+
+alert(isEmpty(schedule)); // fa
+
+function isEmpty(param) {
+  return Object.keys(param).length === 0;
+}
