@@ -680,3 +680,21 @@ const books = [
 //   sum += salaries[s];
 // }
 // console.log(sum);
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+
+function multiplyNumeric(num) {
+  for (const n in num) {
+    if (typeof num[n] === "number") {
+      num[n] *= 2;
+    }
+  }
+}
+
+multiplyNumeric(menu);
+
+console.log(menu);
