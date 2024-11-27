@@ -619,29 +619,35 @@ const books = [
 
 // hi.call(pupu, "Halo");
 
-const alucard = {
-  name: "Alucard",
-  getName(role) {
-    console.log(`${this.name} ${role}`);
-  },
+// const alucard = {
+//   name: "Alucard",
+//   getName(role) {
+//     console.log(`${this.name} ${role}`);
+//   },
+// };
+// alucard.getName("Fighter");
+// const getName = alucard.getName;
+
+// const nana = {
+//   name: "Nana",
+// };
+
+// getName.call(nana, "Mage");
+
+// const lancelot = {
+//   name: "Lancelot",
+// };
+
+// getName.call(lancelot, "Assasin");
+
+// console.log("===================");
+
+// const getNameL = getName.bind(lancelot);
+
+// getNameL("Fighter");
+const poll = {
+  question: "What is your favourite programming language?",
+  options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+  // This generates [0, 0, 0, 0]. More in the next section!
+  answers: new Array(4).fill(0),
 };
-alucard.getName("Fighter");
-const getName = alucard.getName;
-
-const nana = {
-  name: "Nana",
-};
-
-getName.call(nana, "Mage");
-
-const lancelot = {
-  name: "Lancelot",
-};
-
-getName.call(lancelot, "Assasin");
-
-console.log("===================");
-
-const getNameL = getName.bind(lancelot);
-
-getNameL("Fighter");
