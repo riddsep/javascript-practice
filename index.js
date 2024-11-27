@@ -596,3 +596,5 @@ const books = [
 //     `${output.startsWith("Delayed") ? "🔥" : ""}${output.padStart(45)}`
 //   );
 // }
+const greet = (greeting) => (name) => console.log(`${greeting} ${name}`);
+greet("Halo")("rido");
