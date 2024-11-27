@@ -562,20 +562,23 @@ const books = [
 // for (const [i, el] of gameEvents.entries()) {
 //   console.log(`[${i <= 45 ? "FIRST HALF" : "SECOND HALF"}] ${i}: ${el}`);
 // }
-// document.body.append(document.createElement("textarea"));
-// document.body.append(document.createElement("button"));
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
 
-// const btn = document.querySelector("button");
-// const input = document.querySelector("textarea");
-// btn.textContent = "Click";
+const btn = document.querySelector("button");
+const input = document.querySelector("textarea");
+btn.textContent = "Click";
 
-// btn.addEventListener("click", function () {
-//   const str = input.value;
-//   const normalize = str.toLowerCase().split("\n");
+btn.addEventListener("click", function () {
+  const str = input.value;
+  const normalize = str.toLowerCase().split("\n");
 
-//   for (const n of normalize) {
-//     const [f, s] = n.trim().split("_");
+  for (const [i, n] of normalize.entries()) {
+    const [f, s] = n.trim().split("_");
 
-//     console.log(`${f}${s.replace(s[0], s[0].toUpperCase())}`);
-//   }
-// });
+    console.log(
+      `${f}${s.replace(s[0], s[0].toUpperCase())}`.padEnd(20) +
+        "✅".repeat(i + 1)
+    );
+  }
+});
