@@ -598,3 +598,23 @@ const books = [
 // }
 // const greet = (greeting) => (name) => console.log(`${greeting} ${name}`);
 // greet("Halo")("rido");
+
+// const rido = {
+//   name: "Rido Septiawan",
+//   age: 23,
+
+//   sayHi(greet) {
+//     console.log(`${greet} ${this.name} usia ${this.age}`);
+//   },
+// };
+
+// rido.sayHi("Hi");
+
+// const hi = rido.sayHi;
+
+// const pupu = {
+//   name: "Pupu Ramadhan",
+//   age: 23,
+// };
+
+// hi.call(pupu, "Halo");
