@@ -618,3 +618,30 @@ const books = [
 // };
 
 // hi.call(pupu, "Halo");
+
+const alucard = {
+  name: "Alucard",
+  getName(role) {
+    console.log(`${this.name} ${role}`);
+  },
+};
+alucard.getName("Fighter");
+const getName = alucard.getName;
+
+const nana = {
+  name: "Nana",
+};
+
+getName.call(nana, "Mage");
+
+const lancelot = {
+  name: "Lancelot",
+};
+
+getName.call(lancelot, "Assasin");
+
+console.log("===================");
+
+const getNameL = getName.bind(lancelot);
+
+getNameL("Fighter");
