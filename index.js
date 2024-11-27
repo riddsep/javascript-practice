@@ -669,14 +669,14 @@ const books = [
 //   return Object.keys(param).length === 0;
 // }
 
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
-};
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
 
-let sum = 0;
-for (const s in salaries) {
-  sum += salaries[s];
-}
-console.log(sum);
+// let sum = 0;
+// for (const s in salaries) {
+//   sum += salaries[s];
+// }
+// console.log(sum);
