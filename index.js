@@ -698,3 +698,18 @@ const books = [
 // multiplyNumeric(menu);
 
 // console.log(menu);
+
+// const Calculator = function () {
+//   this.read = function () {
+//     this.a = +prompt("Nilai 1: ");
+//     this.b = +prompt("Nilai 2: ");
+//   };
+
+//   this.sum = function () {
+//     return this.a * this.b;
+//   };
+// };
+
+// const sum = new Calculator();
+// sum.read();
+// console.log(sum.sum());
