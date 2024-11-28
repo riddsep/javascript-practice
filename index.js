@@ -618,3 +618,83 @@ const books = [
 // };
 
 // hi.call(pupu, "Halo");
+
+// const alucard = {
+//   name: "Alucard",
+//   getName(role) {
+//     console.log(`${this.name} ${role}`);
+//   },
+// };
+// alucard.getName("Fighter");
+// const getName = alucard.getName;
+
+// const nana = {
+//   name: "Nana",
+// };
+
+// getName.call(nana, "Mage");
+
+// const lancelot = {
+//   name: "Lancelot",
+// };
+
+// getName.call(lancelot, "Assasin");
+
+// console.log("===================");
+
+// const getNameL = getName.bind(lancelot);
+
+// getNameL("Fighter");
+// const poll = {
+//   question: "What is your favourite programming language?",
+//   options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+//   // This generates [0, 0, 0, 0]. More in the next section!
+//   answers: new Array(4).fill(0),
+// };
+// const user = {};
+// user.name = "Jhon";
+// user.surname = "Smith";
+
+// console.log(user);
+
+// let schedule = {};
+
+// alert(isEmpty(schedule)); // true
+
+// schedule["8:30"] = "get up";
+
+// alert(isEmpty(schedule)); // fa
+
+// function isEmpty(param) {
+//   return Object.keys(param).length === 0;
+// }
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+
+// let sum = 0;
+// for (const s in salaries) {
+//   sum += salaries[s];
+// }
+// console.log(sum);
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
+
+// function multiplyNumeric(num) {
+//   for (const n in num) {
+//     if (typeof num[n] === "number") {
+//       num[n] *= 2;
+//     }
+//   }
+// }
+
+// multiplyNumeric(menu);
+
+// console.log(menu);
