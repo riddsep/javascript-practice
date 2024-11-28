@@ -681,20 +681,20 @@ const books = [
 // }
 // console.log(sum);
 
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu",
-};
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
 
-function multiplyNumeric(num) {
-  for (const n in num) {
-    if (typeof num[n] === "number") {
-      num[n] *= 2;
-    }
-  }
-}
+// function multiplyNumeric(num) {
+//   for (const n in num) {
+//     if (typeof num[n] === "number") {
+//       num[n] *= 2;
+//     }
+//   }
+// }
 
-multiplyNumeric(menu);
+// multiplyNumeric(menu);
 
-console.log(menu);
+// console.log(menu);
