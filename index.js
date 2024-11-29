@@ -746,9 +746,4 @@ let accumulator = new Accumulator(10); // initial value 1
 // console.log(checkSpam("free xxxxx"));
 // console.log(checkSpam("innocent rabbit"));
 
-const truncate = function (str, maxlength) {
-  return str.length > maxlength ? str.slice(0, maxlength) + "..." : str;
-};
-
-console.log(truncate("What I'd like to tell on this topic is:", 20));
-console.log(truncate("Hi everyone!", 20));
+// s
