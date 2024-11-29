@@ -753,10 +753,32 @@ const books = [
 
 // console.log(hitungLuasSegitiga(10, 5)); // Output: 25
 
-function cekGanjilGenap(angka) {
+// function cekGanjilGenap(angka) {
+//   // Tulis kode di sini
+//   return angka % 2 !== 0 ? "Ganjil" : "Genap";
+// }
+
+// console.log(cekGanjilGenap(7)); // Output: 'Ganjil'
+// console.log(cekGanjilGenap(10)); // Output: 'Genap'
+
+// function reverseString(str) {
+//   // Tulis kode di sini
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(reverseString("hello")); // Output: 'olleh'
+
+function hitungVokal(str) {
   // Tulis kode di sini
-  return angka % 2 !== 0 ? "Ganjil" : "Genap";
+  const vocal = ["a", "i", "u", "e", "o"];
+  let output = 0;
+  for (const item of str) {
+    if (vocal.includes(item)) {
+      output++;
+    }
+  }
+  return output;
 }
 
-console.log(cekGanjilGenap(7)); // Output: 'Ganjil'
-console.log(cekGanjilGenap(10)); // Output: 'Genap'
+console.log(hitungVokal("programming")); // Output: 3
+console.log(hitungVokal("javascript")); // Output: 3
