@@ -768,17 +768,23 @@ const books = [
 
 // console.log(reverseString("hello")); // Output: 'olleh'
 
-function hitungVokal(str) {
+// function hitungVokal(str) {
+//   // Tulis kode di sini
+//   const vocal = ["a", "i", "u", "e", "o"];
+//   let output = 0;
+//   for (const item of str) {
+//     if (vocal.includes(item)) {
+//       output++;
+//     }
+//   }
+//   return output;
+// }
+
+// console.log(hitungVokal("programming")); // Output: 3
+// console.log(hitungVokal("javascript")); // Output: 3
+function findMax(arr) {
   // Tulis kode di sini
-  const vocal = ["a", "i", "u", "e", "o"];
-  let output = 0;
-  for (const item of str) {
-    if (vocal.includes(item)) {
-      output++;
-    }
-  }
-  return output;
+  return Math.max(...arr);
 }
 
-console.log(hitungVokal("programming")); // Output: 3
-console.log(hitungVokal("javascript")); // Output: 3
+console.log(findMax([1, 15, 3, 9, 2])); // Output: 9
