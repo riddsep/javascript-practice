@@ -753,10 +753,52 @@ const books = [
 
 // console.log(hitungLuasSegitiga(10, 5)); // Output: 25
 
-function cekGanjilGenap(angka) {
-  // Tulis kode di sini
-  return angka % 2 !== 0 ? "Ganjil" : "Genap";
-}
+// function cekGanjilGenap(angka) {
+//   // Tulis kode di sini
+//   return angka % 2 !== 0 ? "Ganjil" : "Genap";
+// }
 
-console.log(cekGanjilGenap(7)); // Output: 'Ganjil'
-console.log(cekGanjilGenap(10)); // Output: 'Genap'
+// console.log(cekGanjilGenap(7)); // Output: 'Ganjil'
+// console.log(cekGanjilGenap(10)); // Output: 'Genap'
+
+// function reverseString(str) {
+//   // Tulis kode di sini
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(reverseString("hello")); // Output: 'olleh'
+
+// function hitungVokal(str) {
+//   // Tulis kode di sini
+//   const vocal = ["a", "i", "u", "e", "o"];
+//   let output = 0;
+//   for (const item of str) {
+//     if (vocal.includes(item)) {
+//       output++;
+//     }
+//   }
+//   return output;
+// }
+
+// console.log(hitungVokal("programming")); // Output: 3
+// console.log(hitungVokal("javascript")); // Output: 3
+// function findMax(arr) {
+//   // Tulis kode di sini
+//   return Math.max(...arr);
+// }
+
+// console.log(findMax([1, 15, 3, 9, 2])); // Output: 9
+
+// function removeDuplicates(arr) {
+//   // Tulis kode di sini
+//   return [...new Set(arr)];
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+
+// function generateFibonacci(n) {
+//   // Tulis kode di sini
+//   const fibonacci = [0];
+// }
+
+// console.log(generateFibonacci(5)); // Output: [0, 1, 1, 2, 3]
