@@ -782,9 +782,23 @@ const books = [
 
 // console.log(hitungVokal("programming")); // Output: 3
 // console.log(hitungVokal("javascript")); // Output: 3
-function findMax(arr) {
-  // Tulis kode di sini
-  return Math.max(...arr);
-}
+// function findMax(arr) {
+//   // Tulis kode di sini
+//   return Math.max(...arr);
+// }
 
-console.log(findMax([1, 15, 3, 9, 2])); // Output: 9
+// console.log(findMax([1, 15, 3, 9, 2])); // Output: 9
+
+// function removeDuplicates(arr) {
+//   // Tulis kode di sini
+//   return [...new Set(arr)];
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5])); // Output: [1, 2, 3, 4, 5]
+
+// function generateFibonacci(n) {
+//   // Tulis kode di sini
+//   const fibonacci = [0];
+// }
+
+// console.log(generateFibonacci(5)); // Output: [0, 1, 1, 2, 3]
