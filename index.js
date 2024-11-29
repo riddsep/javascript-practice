@@ -714,15 +714,15 @@ const books = [
 // sum.read();
 // console.log(sum.sum());
 
-const Accumulator = function (startingValue) {
-  this.value = startingValue;
+// const Accumulator = function (startingValue) {
+//   this.value = startingValue;
 
-  this.read = function () {
-    this.a = +prompt("Nilai 1: ");
-    this.value += this.a;
-  };
-};
-let accumulator = new Accumulator(10); // initial value 1
+//   this.read = function () {
+//     this.a = +prompt("Nilai 1: ");
+//     this.value += this.a;
+//   };
+// };
+// let accumulator = new Accumulator(10); // initial value 1
 
 // accumulator.read(); // adds the user-entered value
 // accumulator.read(); // adds the user-entered value
@@ -746,9 +746,17 @@ let accumulator = new Accumulator(10); // initial value 1
 // console.log(checkSpam("free xxxxx"));
 // console.log(checkSpam("innocent rabbit"));
 
-const truncate = function (str, maxlength) {
-  return str.length > maxlength ? str.slice(0, maxlength) + "..." : str;
-};
+// function hitungLuasSegitiga(alas, tinggi) {
+//   // Tulis kode di sini
+//   return (alas * tinggi) / 2;
+// }
 
-console.log(truncate("What I'd like to tell on this topic is:", 20));
-console.log(truncate("Hi everyone!", 20));
+// console.log(hitungLuasSegitiga(10, 5)); // Output: 25
+
+function cekGanjilGenap(angka) {
+  // Tulis kode di sini
+  return angka % 2 !== 0 ? "Ganjil" : "Genap";
+}
+
+console.log(cekGanjilGenap(7)); // Output: 'Ganjil'
+console.log(cekGanjilGenap(10)); // Output: 'Genap'
