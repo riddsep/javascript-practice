@@ -713,3 +713,42 @@ const books = [
 // const sum = new Calculator();
 // sum.read();
 // console.log(sum.sum());
+
+const Accumulator = function (startingValue) {
+  this.value = startingValue;
+
+  this.read = function () {
+    this.a = +prompt("Nilai 1: ");
+    this.value += this.a;
+  };
+};
+let accumulator = new Accumulator(10); // initial value 1
+
+// accumulator.read(); // adds the user-entered value
+// accumulator.read(); // adds the user-entered value
+
+// alert(accumulator.value);
+
+// console.log(Math.min(...[3, 5, -10, 0, 1]));
+
+// const ucFirst = function (str) {
+//   return str.replace(str[0], str[0].toUpperCase());
+// };
+// console.log(ucFirst("rido"));
+// console.log(ucFirst("john") == "John");
+
+// const checkSpam = function (str) {
+//   console.log(str);
+//   const normalize = str.toLowerCase();
+//   return normalize.includes("viagra") || normalize.includes("xxx");
+// };
+// console.log(checkSpam("buy ViAgRA now"));
+// console.log(checkSpam("free xxxxx"));
+// console.log(checkSpam("innocent rabbit"));
+
+const truncate = function (str, maxlength) {
+  return str.length > maxlength ? str.slice(0, maxlength) + "..." : str;
+};
+
+console.log(truncate("What I'd like to tell on this topic is:", 20));
+console.log(truncate("Hi everyone!", 20));
