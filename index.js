@@ -849,17 +849,17 @@ const books = [
 //     : "ownersEatTooLittle";
 // console.log(eat, sarahDogs.recommendedFood, sarahDogs.curFood);
 
-// const Person = function (firstName, birthYear) {
-//   this.firstName = firstName;
-//   this.birthYear = birthYear;
-// };
+const Person = function (firstName, birthYear) {
+  this.firstName = firstName;
+  this.birthYear = birthYear;
+};
 
-// Person.prototype.sayHi = function (greet) {
-//   console.log(
-//     `${greet}, nama saya ${this.firstName} saya lahir tahun ${this.birthYear}`
-//   );
-// };
+Person.prototype.sayHi = function (greet) {
+  console.log(
+    `${greet}, nama saya ${this.firstName} saya lahir tahun ${this.birthYear}`
+  );
+};
 
-// const rido = new Person("Rido", 2001);
-// rido.sayHi(`Halo ges`);
-// console.log(Object.getPrototypeOf("Person"));
+const rido = new Person("Rido", 2001);
+rido.sayHi(`Halo ges`);
+console.log(Object.getPrototypeOf("Person"));
