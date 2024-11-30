@@ -802,3 +802,64 @@ const books = [
 // }
 
 // console.log(generateFibonacci(5)); // Output: [0, 1, 1, 2, 3]
+
+// function highAndLow(numbers) {
+//   // ...
+//   const nums = numbers.split(" ").map(Number);
+//   let min = nums[0];
+//   let max = nums[0];
+
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] < min) {
+//       min = nums[i];
+//     } else if (nums[i] > max) {
+//       max = nums[i];
+//     }
+//   }
+//   return `${max} ${min}`;
+// }
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+// const calcAverageHumanAge = function (ages) {
+//   const humanAge = ages
+//     .map((age) => (age <= 2 ? 2 * age : 16 + age * 4))
+//     .filter((age) => age >= 18)
+//     .reduce((acc, curr) => acc + curr, 0);
+//   console.log(humanAge);
+// };
+// calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
+// calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+
+// const dogs = [
+//   { weight: 22, curFood: 250, owners: ["Alice", "Bob"] },
+//   { weight: 8, curFood: 200, owners: ["Matilda"] },
+//   { weight: 13, curFood: 275, owners: ["Sarah", "John"] },
+//   { weight: 32, curFood: 340, owners: ["Michael"] },
+// ];
+
+// const recfood = dogs.map(
+//   (dog) => (dog.recommendedFood = dog.weight ** 0.75 * 28)
+// );
+// console.log(recfood);
+
+// const sarahDogs = dogs.find((dog) => dog.owners.includes("Sarah"));
+// const eat =
+//   sarahDogs.recommendedFood > sarahDogs.curFood
+//     ? "ownersEatTooMuch"
+//     : "ownersEatTooLittle";
+// console.log(eat, sarahDogs.recommendedFood, sarahDogs.curFood);
+
+// const Person = function (firstName, birthYear) {
+//   this.firstName = firstName;
+//   this.birthYear = birthYear;
+// };
+
+// Person.prototype.sayHi = function (greet) {
+//   console.log(
+//     `${greet}, nama saya ${this.firstName} saya lahir tahun ${this.birthYear}`
+//   );
+// };
+
+// const rido = new Person("Rido", 2001);
+// rido.sayHi(`Halo ges`);
+// console.log(Object.getPrototypeOf("Person"));
