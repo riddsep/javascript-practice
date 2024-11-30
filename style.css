@@ -1,19 +1,8 @@
-body {
-  background: #222;
-  padding: 32px;
-}
-
-.card {
-  background-color: white;
-  border-radius: 8px;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-p,
-img {
+h2 {
+  /* Firefox requires a vendor prefix */
+  width: -moz-fit-content;
+  background-color: peachpuff;
   margin-bottom: 16px;
+  padding: 8px;
+  width: max-content;
 }
