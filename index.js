@@ -862,3 +862,4 @@ Person.prototype.sayHi = function (greet) {
 
 const rido = new Person("Rido", 2001);
 rido.sayHi(`Halo ges`);
+console.log(Object.getPrototypeOf("Person"));
