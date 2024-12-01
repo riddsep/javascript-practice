@@ -920,23 +920,23 @@ const books = [
 // console.log(rido);
 // Person.hi();
 
-class Iphone {
-  constructor(type, price, year) {
-    this.type = type;
-    this.price = price;
-    this.year = year;
-  }
+// class Iphone {
+//   constructor(type, price, year) {
+//     this.type = type;
+//     this.price = price;
+//     this.year = year;
+//   }
 
-  set type(t) {
-    if (t.includes(11)) this._type = t;
-  }
-  get type() {
-    return this._type;
-  }
-}
+//   set type(t) {
+//     if (t.includes(11)) this._type = t;
+//   }
+//   get type() {
+//     return this._type;
+//   }
+// }
 
-const ip11 = new Iphone("Iphone 12", 1000, 2019);
-ip11.type = "Ip 11";
+// const ip11 = new Iphone("Iphone 12", 1000, 2019);
+// ip11.type = "Ip 11";
 
-ip11.type;
-console.log(ip11);
+// ip11.type;
+// console.log(ip11);
