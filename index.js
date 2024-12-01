@@ -886,3 +886,19 @@ const books = [
 // bmw.accelerate();
 // bmw.brake();
 // bmw.brake();
+
+class Car {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} going on ${this.speed} km/h`);
+  }
+}
+
+const bmw = new Car("BMW", 120);
+bmw.accelerate();
+bmw.accelerate();
