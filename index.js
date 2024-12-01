@@ -920,23 +920,56 @@ const books = [
 // console.log(rido);
 // Person.hi();
 
-class Iphone {
-  constructor(type, price, year) {
-    this.type = type;
-    this.price = price;
-    this.year = year;
+// class Iphone {
+//   constructor(type, price, year) {
+//     this.type = type;
+//     this.price = price;
+//     this.year = year;
+//   }
+
+//   set type(t) {
+//     if (t.includes(11)) this._type = t;
+//   }
+//   get type() {
+//     return this._type;
+//   }
+// }
+
+// const ip11 = new Iphone("Iphone 12", 1000, 2019);
+// ip11.type = "Ip 11";
+
+// ip11.type;
+// console.log(ip11);
+
+class Car {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
   }
 
-  set type(t) {
-    if (t.includes(11)) this._type = t;
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} going on ${this.speed} km/h`);
   }
-  get type() {
-    return this._type;
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} going on ${this.speed} km/h`);
+  }
+
+  get speedUS() {
+    return (this.speed /= 1.6);
+  }
+
+  set speedUS(speed) {
+    this.speed = speed * 1.6;
   }
 }
 
-const ip11 = new Iphone("Iphone 12", 1000, 2019);
-ip11.type = "Ip 11";
+const ford = new Car("Ford", 120);
 
-ip11.type;
-console.log(ip11);
+console.log(ford.speedUS);
+ford.accelerate();
+ford.accelerate();
+ford.brake();
+ford.speedUS = 50;
+console.log(ford);
