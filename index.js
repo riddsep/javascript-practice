@@ -849,17 +849,56 @@ const books = [
 //     : "ownersEatTooLittle";
 // console.log(eat, sarahDogs.recommendedFood, sarahDogs.curFood);
 
-const Person = function (firstName, birthYear) {
-  this.firstName = firstName;
-  this.birthYear = birthYear;
-};
+// const Person = function (firstName, birthYear) {
+//   this.firstName = firstName;
+//   this.birthYear = birthYear;
+// };
 
-Person.prototype.sayHi = function (greet) {
-  console.log(
-    `${greet}, nama saya ${this.firstName} saya lahir tahun ${this.birthYear}`
-  );
-};
+// Person.prototype.sayHi = function (greet) {
+//   console.log(
+//     `${greet}, nama saya ${this.firstName} saya lahir tahun ${this.birthYear}`
+//   );
+// };
 
-const rido = new Person("Rido", 2001);
-rido.sayHi(`Halo ges`);
-console.log(Object.getPrototypeOf("Person"));
+// const rido = new Person("Rido", 2001);
+// rido.sayHi(`Halo ges`);
+// console.log(Object.getPrototypeOf("Person"));
+
+// const Car = function (make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+// };
+
+// Car.prototype.accelerate = function () {
+//   console.log((this.speed += 10));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
+// Car.prototype.brake = function () {
+//   console.log((this.speed -= 5));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
+
+// const bmw = new Car("BMW", 120);
+// const mercedes = new Car("Mercedes", 95);
+
+// bmw.accelerate();
+// bmw.accelerate();
+// bmw.accelerate();
+// bmw.brake();
+// bmw.brake();
+
+// class Car {
+//   constructor(make, speed) {
+//     this.make = make;
+//     this.speed = speed;
+//   }
+
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(`${this.make} going on ${this.speed} km/h`);
+//   }
+// }
+
+// const bmw = new Car("BMW", 120);
+// bmw.accelerate();
+// bmw.accelerate();

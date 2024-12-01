@@ -1,19 +1,14 @@
-body {
-  background: #222;
-  padding: 32px;
+figure {
+  padding: 8px;
+  border: 1px solid;
+  margin-bottom: 32px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 8px;
+figure img {
+  margin-bottom: 8px;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
-p,
-img {
-  margin-bottom: 16px;
+figcaption {
+  text-align: center;
+  color: #666666;
 }
