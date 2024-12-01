@@ -1,8 +1,14 @@
-h2 {
-  /* Firefox requires a vendor prefix */
-  width: -moz-fit-content;
-  background-color: peachpuff;
-  margin-bottom: 16px;
+figure {
   padding: 8px;
-  width: max-content;
+  border: 1px solid;
+  margin-bottom: 32px;
+}
+
+figure img {
+  margin-bottom: 8px;
+}
+
+figcaption {
+  text-align: center;
+  color: #666666;
 }
