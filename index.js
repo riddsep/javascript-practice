@@ -903,19 +903,19 @@ const books = [
 // bmw.accelerate();
 // bmw.accelerate();
 
-const Person = function (fullName, birthYear) {
-  this.fullName = fullName;
-  this.birthYear = birthYear;
-};
+// const Person = function (fullName, birthYear) {
+//   this.fullName = fullName;
+//   this.birthYear = birthYear;
+// };
 
-Person.prototype.calcAge = function () {
-  this.age = 2030 - this.birthYear;
-};
-Person.hi = function () {
-  console.log(`Hi im static`);
-};
+// Person.prototype.calcAge = function () {
+//   this.age = 2030 - this.birthYear;
+// };
+// Person.hi = function () {
+//   console.log(`Hi im static`);
+// };
 
-const rido = new Person("Rido", 2001);
-rido.calcAge();
-console.log(rido);
-Person.hi();
+// const rido = new Person("Rido", 2001);
+// rido.calcAge();
+// console.log(rido);
+// Person.hi();
