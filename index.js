@@ -864,25 +864,25 @@ const books = [
 // rido.sayHi(`Halo ges`);
 // console.log(Object.getPrototypeOf("Person"));
 
-const Car = function (make, speed) {
-  this.make = make;
-  this.speed = speed;
-};
+// const Car = function (make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+// };
 
-Car.prototype.accelerate = function () {
-  console.log((this.speed += 10));
-  console.log(`${this.make} going at ${this.speed} km/h`);
-};
-Car.prototype.brake = function () {
-  console.log((this.speed -= 5));
-  console.log(`${this.make} going at ${this.speed} km/h`);
-};
+// Car.prototype.accelerate = function () {
+//   console.log((this.speed += 10));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
+// Car.prototype.brake = function () {
+//   console.log((this.speed -= 5));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
 
-const bmw = new Car("BMW", 120);
-const mercedes = new Car("Mercedes", 95);
+// const bmw = new Car("BMW", 120);
+// const mercedes = new Car("Mercedes", 95);
 
-bmw.accelerate();
-bmw.accelerate();
-bmw.accelerate();
-bmw.brake();
-bmw.brake();
+// bmw.accelerate();
+// bmw.accelerate();
+// bmw.accelerate();
+// bmw.brake();
+// bmw.brake();
