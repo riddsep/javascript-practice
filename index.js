@@ -1163,3 +1163,38 @@ const books = [
 
 // console.log(marvel.cariFilm("Supranatural"));
 // marvel.tampilkanSemuaFilm;
+
+class Hewan {
+  constructor(name) {
+    this.name = name;
+  }
+
+  suara() {
+    return `Hewan Bersuara`;
+  }
+}
+
+class Kucing extends Hewan {
+  constructor(name) {
+    super(name);
+  }
+
+  suara() {
+    return `Meong`;
+  }
+}
+class Anjing extends Hewan {
+  constructor(name) {
+    super(name);
+  }
+
+  suara() {
+    return `GukGuk`;
+  }
+}
+
+const bobi = new Kucing("Bobbi");
+const bobo = new Anjing("Bobbo");
+
+console.log(bobi.suara());
+console.log(bobo.suara());
