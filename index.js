@@ -1053,3 +1053,28 @@ const books = [
 
 // tesla.accelerate();
 // console.log(tesla);
+
+class Account {
+  constructor(username, pin) {
+    this.username = username;
+    this.pin = pin;
+    this.mov = [];
+  }
+
+  deposit(amount) {
+    this.mov.push(amount);
+  }
+
+  withdrawal(amount) {
+    this.deposit(-amount);
+  }
+}
+
+const acc1 = new Account("Ridoseptiawan", 1111);
+
+acc1.deposit(300);
+acc1.deposit(300);
+acc1.deposit(300);
+acc1.deposit(300);
+acc1.withdrawal(500);
+console.log(acc1);
