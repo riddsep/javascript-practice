@@ -1079,55 +1079,55 @@ const books = [
 // acc1.withdrawal(500);
 // console.log(acc1);
 
-class Car {
-  constructor(brand, year) {
-    this.brand = brand;
-    this.year = year;
-    this.speed = 0;
-  }
+// class Car {
+//   constructor(brand, year) {
+//     this.brand = brand;
+//     this.year = year;
+//     this.speed = 0;
+//   }
 
-  description() {
-    console.log(`Mobil ini adalah ${this.brand} keluaran tahun ${this.year}`);
-  }
-  set accelerate(n) {
-    this.speed += n;
-  }
-  set brake(n) {
-    this.speed -= n;
-    if (this.speed < 0) {
-      this.speed = 0;
-    }
-  }
-  get getSpeed() {
-    return this.speed;
-  }
-}
-const toyota = new Car("Toyota", 2020);
-toyota.description();
+//   description() {
+//     console.log(`Mobil ini adalah ${this.brand} keluaran tahun ${this.year}`);
+//   }
+//   set accelerate(n) {
+//     this.speed += n;
+//   }
+//   set brake(n) {
+//     this.speed -= n;
+//     if (this.speed < 0) {
+//       this.speed = 0;
+//     }
+//   }
+//   get getSpeed() {
+//     return this.speed;
+//   }
+// }
+// const toyota = new Car("Toyota", 2020);
+// toyota.description();
 
-toyota.accelerate = 50;
-toyota.brake = 20;
-console.log(toyota.getSpeed);
+// toyota.accelerate = 50;
+// toyota.brake = 20;
+// console.log(toyota.getSpeed);
 
-class SportCar extends Car {
-  constructor(brand, year, turbo = false) {
-    super(brand, year);
-    this.turbo = turbo;
-  }
+// class SportCar extends Car {
+//   constructor(brand, year, turbo = false) {
+//     super(brand, year);
+//     this.turbo = turbo;
+//   }
 
-  activeTurbo() {
-    this.turbo = true;
-  }
-  description() {
-    console.log(
-      `Mobil ini adalah ${this.brand} keluaran tahun ${this.year}. Turbo: ${
-        this.turbo ? "Active" : "Not Active"
-      }`
-    );
-  }
-}
+//   activeTurbo() {
+//     this.turbo = true;
+//   }
+//   description() {
+//     console.log(
+//       `Mobil ini adalah ${this.brand} keluaran tahun ${this.year}. Turbo: ${
+//         this.turbo ? "Active" : "Not Active"
+//       }`
+//     );
+//   }
+// }
 
-const ferrari = new SportCar("Ferrari", 2023);
-ferrari.description();
-ferrari.activeTurbo();
-ferrari.description();
+// const ferrari = new SportCar("Ferrari", 2023);
+// ferrari.description();
+// ferrari.activeTurbo();
+// ferrari.description();
