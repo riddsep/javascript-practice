@@ -1012,44 +1012,154 @@ const books = [
 // tesla.brake();
 // console.log(tesla);
 
-class Car {
-  constructor(make, speed) {
-    this.make = make;
-    this.speed = speed;
-  }
+// class Car {
+//   constructor(make, speed) {
+//     this.make = make;
+//     this.speed = speed;
+//   }
 
-  accelerate() {
-    this.speed += 10;
-    console.log(`${this.make} going at ${this.speed} km/h`);
-  }
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(`${this.make} going at ${this.speed} km/h`);
+//   }
 
-  brake() {
-    this.speed -= 5;
-    console.log(`${this.make} going at ${this.speed} km/h`);
-  }
-}
-const bmw = new Car("BMW", 120);
-bmw.accelerate();
-bmw.accelerate();
-bmw.brake();
-console.log(bmw);
+//   brake() {
+//     this.speed -= 5;
+//     console.log(`${this.make} going at ${this.speed} km/h`);
+//   }
+// }
+// const bmw = new Car("BMW", 120);
+// bmw.accelerate();
+// bmw.accelerate();
+// bmw.brake();
+// console.log(bmw);
 
-class EV extends Car {
-  constructor(make, speed, charge) {
-    super(make, speed);
-    this.charge = charge;
-  }
+// class EV extends Car {
+//   constructor(make, speed, charge) {
+//     super(make, speed);
+//     this.charge = charge;
+//   }
 
-  accelerate() {
-    this.speed += 20;
-    this.charge--;
-    console.log(
-      `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
-    );
-  }
-}
+//   accelerate() {
+//     this.speed += 20;
+//     this.charge--;
+//     console.log(
+//       `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+//     );
+//   }
+// }
 
-const tesla = new EV("Tesla", 140, 23);
+// const tesla = new EV("Tesla", 140, 23);
 
-tesla.accelerate();
-console.log(tesla);
+// tesla.accelerate();
+// console.log(tesla);
+
+// class Account {
+//   constructor(username, pin) {
+//     this.username = username;
+//     this.pin = pin;
+//     this.mov = [];
+//   }
+
+//   deposit(amount) {
+//     this.mov.push(amount);
+//   }
+
+//   withdrawal(amount) {
+//     this.deposit(-amount);
+//   }
+// }
+
+// const acc1 = new Account("Ridoseptiawan", 1111);
+
+// acc1.deposit(300);
+// acc1.deposit(300);
+// acc1.deposit(300);
+// acc1.deposit(300);
+// acc1.withdrawal(500);
+// console.log(acc1);
+
+// class Car {
+//   constructor(brand, year) {
+//     this.brand = brand;
+//     this.year = year;
+//     this.speed = 0;
+//   }
+
+//   description() {
+//     console.log(`Mobil ini adalah ${this.brand} keluaran tahun ${this.year}`);
+//   }
+//   set accelerate(n) {
+//     this.speed += n;
+//   }
+//   set brake(n) {
+//     this.speed -= n;
+//     if (this.speed < 0) {
+//       this.speed = 0;
+//     }
+//   }
+//   get getSpeed() {
+//     return this.speed;
+//   }
+// }
+// const toyota = new Car("Toyota", 2020);
+// toyota.description();
+
+// toyota.accelerate = 50;
+// toyota.brake = 20;
+// console.log(toyota.getSpeed);
+
+// class SportCar extends Car {
+//   constructor(brand, year, turbo = false) {
+//     super(brand, year);
+//     this.turbo = turbo;
+//   }
+
+//   activeTurbo() {
+//     this.turbo = true;
+//   }
+//   description() {
+//     console.log(
+//       `Mobil ini adalah ${this.brand} keluaran tahun ${this.year}. Turbo: ${
+//         this.turbo ? "Active" : "Not Active"
+//       }`
+//     );
+//   }
+// }
+
+// const ferrari = new SportCar("Ferrari", 2023);
+// ferrari.description();
+// ferrari.activeTurbo();
+// ferrari.description();
+
+// class Bioskop {
+//   constructor() {
+//     this.daftarFilm = [];
+//   }
+
+//   tambahFilm(judul, genre, tahun) {
+//     this.daftarFilm.push({
+//       judul,
+//       genre,
+//       tahun,
+//     });
+//   }
+
+//   cariFilm(genre) {
+//     return this.daftarFilm.filter((film) => film.genre == genre);
+//   }
+
+//   get tampilkanSemuaFilm() {
+//     console.log(this.daftarFilm);
+//   }
+// }
+
+// const marvel = new Bioskop();
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("A", "Supranatural", 2023);
+// marvel.tambahFilm("B", "Supranatural", 2023);
+// marvel.tambahFilm("C", "Supranatural", 2023);
+
+// console.log(marvel.cariFilm("Supranatural"));
+// marvel.tampilkanSemuaFilm;
