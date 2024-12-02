@@ -974,40 +974,82 @@ const books = [
 // ford.speedUS = 50;
 // console.log(ford);
 
-const Car = function (make, speed) {
-  this.make = make;
-  this.speed = speed;
-};
+// const Car = function (make, speed) {
+//   this.make = make;
+//   this.speed = speed;
+// };
 
-Car.prototype.accelerate = function () {
-  console.log((this.speed += 10));
-  console.log(`${this.make} going at ${this.speed} km/h`);
-};
-Car.prototype.brake = function () {
-  console.log((this.speed -= 5));
-  console.log(`${this.make} going at ${this.speed} km/h`);
-};
+// Car.prototype.accelerate = function () {
+//   console.log((this.speed += 10));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
+// Car.prototype.brake = function () {
+//   console.log((this.speed -= 5));
+//   console.log(`${this.make} going at ${this.speed} km/h`);
+// };
 
-const EV = function (make, speed, charge) {
-  Car.call(this, make, speed);
-  this.charge = charge;
-};
+// const EV = function (make, speed, charge) {
+//   Car.call(this, make, speed);
+//   this.charge = charge;
+// };
 
-EV.prototype = Object.create(Car.prototype);
-EV.prototype.chargeBattery = function (chargeTo) {
-  this.charge = chargeTo;
-};
-EV.prototype.accelerate = function () {
-  this.charge--;
-  this.speed += 20;
-  console.log(
-    `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
-  );
-};
+// EV.prototype = Object.create(Car.prototype);
+// EV.prototype.chargeBattery = function (chargeTo) {
+//   this.charge = chargeTo;
+// };
+// EV.prototype.accelerate = function () {
+//   this.charge--;
+//   this.speed += 20;
+//   console.log(
+//     `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+//   );
+// };
 
-const tesla = new EV("Tesla", 120, 23);
+// const tesla = new EV("Tesla", 120, 23);
 
-tesla.chargeBattery(90);
+// tesla.chargeBattery(90);
+// tesla.accelerate();
+// tesla.brake();
+// console.log(tesla);
+
+class Car {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} going at ${this.speed} km/h`);
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} going at ${this.speed} km/h`);
+  }
+}
+const bmw = new Car("BMW", 120);
+bmw.accelerate();
+bmw.accelerate();
+bmw.brake();
+console.log(bmw);
+
+class EV extends Car {
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.charge = charge;
+  }
+
+  accelerate() {
+    this.speed += 20;
+    this.charge--;
+    console.log(
+      `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+    );
+  }
+}
+
+const tesla = new EV("Tesla", 140, 23);
+
 tesla.accelerate();
-tesla.brake();
 console.log(tesla);
