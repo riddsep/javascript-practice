@@ -1132,34 +1132,34 @@ const books = [
 // ferrari.activeTurbo();
 // ferrari.description();
 
-class Bioskop {
-  constructor() {
-    this.daftarFilm = [];
-  }
+// class Bioskop {
+//   constructor() {
+//     this.daftarFilm = [];
+//   }
 
-  tambahFilm(judul, genre, tahun) {
-    this.daftarFilm.push({
-      judul,
-      genre,
-      tahun,
-    });
-  }
+//   tambahFilm(judul, genre, tahun) {
+//     this.daftarFilm.push({
+//       judul,
+//       genre,
+//       tahun,
+//     });
+//   }
 
-  cariFilm(genre) {
-    return this.daftarFilm.filter((film) => film.genre == genre);
-  }
+//   cariFilm(genre) {
+//     return this.daftarFilm.filter((film) => film.genre == genre);
+//   }
 
-  get tampilkanSemuaFilm() {
-    console.log(this.daftarFilm);
-  }
-}
+//   get tampilkanSemuaFilm() {
+//     console.log(this.daftarFilm);
+//   }
+// }
 
-const marvel = new Bioskop();
-marvel.tambahFilm("Avengers", "Action", 2023);
-marvel.tambahFilm("Avengers", "Action", 2023);
-marvel.tambahFilm("A", "Supranatural", 2023);
-marvel.tambahFilm("B", "Supranatural", 2023);
-marvel.tambahFilm("C", "Supranatural", 2023);
+// const marvel = new Bioskop();
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("A", "Supranatural", 2023);
+// marvel.tambahFilm("B", "Supranatural", 2023);
+// marvel.tambahFilm("C", "Supranatural", 2023);
 
-console.log(marvel.cariFilm("Supranatural"));
-marvel.tampilkanSemuaFilm;
+// console.log(marvel.cariFilm("Supranatural"));
+// marvel.tampilkanSemuaFilm;
