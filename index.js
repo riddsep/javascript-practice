@@ -1164,37 +1164,70 @@ const books = [
 // console.log(marvel.cariFilm("Supranatural"));
 // marvel.tampilkanSemuaFilm;
 
-class Hewan {
-  constructor(name) {
-    this.name = name;
-  }
+// class Hewan {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  suara() {
-    return `Hewan Bersuara`;
-  }
-}
+//   suara() {
+//     return `Hewan Bersuara`;
+//   }
+// }
 
-class Kucing extends Hewan {
-  constructor(name) {
-    super(name);
-  }
+// class Kucing extends Hewan {
+//   constructor(name) {
+//     super(name);
+//   }
 
-  suara() {
-    return `Meong`;
-  }
-}
-class Anjing extends Hewan {
-  constructor(name) {
-    super(name);
-  }
+//   suara() {
+//     return `Meong`;
+//   }
+// }
+// class Anjing extends Hewan {
+//   constructor(name) {
+//     super(name);
+//   }
 
-  suara() {
-    return `GukGuk`;
-  }
-}
+//   suara() {
+//     return `GukGuk`;
+//   }
+// }
 
-const bobi = new Kucing("Bobbi");
-const bobo = new Anjing("Bobbo");
+// const bobi = new Kucing("Bobbi");
+// const bobo = new Anjing("Bobbo");
 
-console.log(bobi.suara());
-console.log(bobo.suara());
+// console.log(bobi.suara());
+// console.log(bobo.suara());
+
+// class User {
+//   #isPrivate = true;
+//   #password;
+//   constructor(nama, email, password) {
+//     this.nama = nama;
+//     this.email = email;
+//     this.#password = password;
+//     this.role = "user";
+//   }
+
+//   setRole(role) {
+//     this.role = role;
+//   }
+
+//   info() {
+//     console.log(`Nama: ${this.nama}, Email: ${this.email}, Role: ${this.role}`);
+//   }
+
+//   getPrivate() {
+//     return this.#isPrivate;
+//   }
+// }
+
+// const rido = new User("Rido septiawan", "ridoseptiawan@gmail.com", "mangeak");
+// const husni = new User("Husni mubarak", "husnimubarak@gmail.com", "mangeak");
+// const pupu = new User("Pupu Ramadhan", "pupuramadhan@gmail.com", "mangeak");
+// const user = [rido, husni, pupu];
+
+// user[0].setRole("admin");
+
+// console.log(user);
+// console.log(rido.getPrivate());
