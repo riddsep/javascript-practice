@@ -1273,11 +1273,11 @@ class EVCl extends CarCL {
 
 const rivian = new EVCl("Rivian", 120, 23);
 
-rivian
-  .accelerate()
-  .accelerate()
-  .accelerate()
-  .brake()
-  .chargeBattery(50)
-  .accelerate();
-console.log(rivian);
+// rivian
+//   .accelerate()
+//   .accelerate()
+//   .accelerate()
+//   .brake()
+//   .chargeBattery(50)
+//   .accelerate();
+// console.log(rivian);
