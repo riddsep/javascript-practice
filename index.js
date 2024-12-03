@@ -1249,29 +1249,29 @@ class CarCL {
   }
 }
 
-class EVCl extends CarCL {
-  #charge;
-  constructor(make, speed, charge) {
-    super(make, speed);
-    this.#charge = charge;
-  }
-  accelerate() {
-    this.speed += 20;
-    this.#charge--;
-    console.log(
-      `${this.make} going at ${this.speed} km/h, with a charge of ${
-        this.#charge
-      }%`
-    );
-    return this;
-  }
-  chargeBattery(charge) {
-    this.#charge = charge;
-    return this;
-  }
-}
+// class EVCl extends CarCL {
+//   #charge;
+//   constructor(make, speed, charge) {
+//     super(make, speed);
+//     this.#charge = charge;
+//   }
+//   accelerate() {
+//     this.speed += 20;
+//     this.#charge--;
+//     console.log(
+//       `${this.make} going at ${this.speed} km/h, with a charge of ${
+//         this.#charge
+//       }%`
+//     );
+//     return this;
+//   }
+//   chargeBattery(charge) {
+//     this.#charge = charge;
+//     return this;
+//   }
+// }
 
-const rivian = new EVCl("Rivian", 120, 23);
+// const rivian = new EVCl("Rivian", 120, 23);
 
 // rivian
 //   .accelerate()
