@@ -1231,3 +1231,33 @@ const books = [
 
 // console.log(user);
 // console.log(rido.getPrivate());
+
+class CarCL {
+  constructor(make, speed) {
+    this.make = make;
+    this.speed = speed;
+  }
+  accelerate() {
+    this.speed += 10;
+    console.log(`${this.make} going at ${this.speed} km/h`);
+  }
+
+  brake() {
+    this.speed -= 5;
+    console.log(`${this.make} going at ${this.speed} km/h`);
+  }
+}
+
+class EVCl extends CarCL {
+  constructor(make, speed, charge) {
+    super(make, speed);
+    this.carge = charge;
+  }
+  accelerate() {
+    this.speed += 20;
+    this.charge--;
+    console.log(
+      `${this.make} going at ${this.speed} km/h, with a charge of ${this.charge}%`
+    );
+  }
+}
