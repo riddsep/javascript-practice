@@ -1183,101 +1183,101 @@ const books = [
 //     return `Meong`;
 //   }
 // }
-class Anjing extends Hewan {
-  constructor(name) {
-    super(name);
-  }
+// class Anjing extends Hewan {
+//   constructor(name) {
+//     super(name);
+//   }
 
-  suara() {
-    return `GukGuk`;
-  }
-}
+//   suara() {
+//     return `GukGuk`;
+//   }
+// }
 
-const bobi = new Kucing("Bobbi");
-const bobo = new Anjing("Bobbo");
+// const bobi = new Kucing("Bobbi");
+// const bobo = new Anjing("Bobbo");
 
-console.log(bobi.suara());
-console.log(bobo.suara());
+// console.log(bobi.suara());
+// console.log(bobo.suara());
 
-class User {
-  #isPrivate = true;
-  #password;
-  constructor(nama, email, password) {
-    this.nama = nama;
-    this.email = email;
-    this.#password = password;
-    this.role = "user";
-  }
+// class User {
+//   #isPrivate = true;
+//   #password;
+//   constructor(nama, email, password) {
+//     this.nama = nama;
+//     this.email = email;
+//     this.#password = password;
+//     this.role = "user";
+//   }
 
-  setRole(role) {
-    this.role = role;
-  }
+//   setRole(role) {
+//     this.role = role;
+//   }
 
-  info() {
-    console.log(`Nama: ${this.nama}, Email: ${this.email}, Role: ${this.role}`);
-  }
+//   info() {
+//     console.log(`Nama: ${this.nama}, Email: ${this.email}, Role: ${this.role}`);
+//   }
 
-  getPrivate() {
-    return this.#isPrivate;
-  }
-}
+//   getPrivate() {
+//     return this.#isPrivate;
+//   }
+// }
 
-const rido = new User("Rido septiawan", "ridoseptiawan@gmail.com", "mangeak");
-const husni = new User("Husni mubarak", "husnimubarak@gmail.com", "mangeak");
-const pupu = new User("Pupu Ramadhan", "pupuramadhan@gmail.com", "mangeak");
-const user = [rido, husni, pupu];
+// const rido = new User("Rido septiawan", "ridoseptiawan@gmail.com", "mangeak");
+// const husni = new User("Husni mubarak", "husnimubarak@gmail.com", "mangeak");
+// const pupu = new User("Pupu Ramadhan", "pupuramadhan@gmail.com", "mangeak");
+// const user = [rido, husni, pupu];
 
-user[0].setRole("admin");
+// user[0].setRole("admin");
 
-console.log(user);
-console.log(rido.getPrivate());
+// console.log(user);
+// console.log(rido.getPrivate());
 
-class CarCL {
-  constructor(make, speed) {
-    this.make = make;
-    this.speed = speed;
-  }
-  accelerate() {
-    this.speed += 10;
-    console.log(`${this.make} going at ${this.speed} km/h`);
-  }
+// class CarCL {
+//   constructor(make, speed) {
+//     this.make = make;
+//     this.speed = speed;
+//   }
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(`${this.make} going at ${this.speed} km/h`);
+//   }
 
-  brake() {
-    this.speed -= 5;
-    console.log(`${this.make} going at ${this.speed} km/h`);
-    return this;
-  }
-}
+//   brake() {
+//     this.speed -= 5;
+//     console.log(`${this.make} going at ${this.speed} km/h`);
+//     return this;
+//   }
+// }
 
-class EVCl extends CarCL {
-  #charge;
-  constructor(make, speed, charge) {
-    super(make, speed);
-    this.#charge = charge;
-  }
-  accelerate() {
-    this.speed += 20;
-    this.#charge--;
-    console.log(
-      `${this.make} going at ${this.speed} km/h, with a charge of ${
-        this.#charge
-      }%`
-    );
-    return this;
-  }
-  chargeBattery(charge) {
-    this.#charge = charge;
-    return this;
-  }
-}
+// class EVCl extends CarCL {
+//   #charge;
+//   constructor(make, speed, charge) {
+//     super(make, speed);
+//     this.#charge = charge;
+//   }
+//   accelerate() {
+//     this.speed += 20;
+//     this.#charge--;
+//     console.log(
+//       `${this.make} going at ${this.speed} km/h, with a charge of ${
+//         this.#charge
+//       }%`
+//     );
+//     return this;
+//   }
+//   chargeBattery(charge) {
+//     this.#charge = charge;
+//     return this;
+//   }
+// }
 
-const rivian = new EVCl("Rivian", 120, 23);
+// const rivian = new EVCl("Rivian", 120, 23);
 
-rivian
-  .accelerate()
-  .accelerate()
-  .accelerate()
-  .brake()
-  .chargeBattery(50)
-  .accelerate();
-console.log(rivian);
+// rivian
+//   .accelerate()
+//   .accelerate()
+//   .accelerate()
+//   .brake()
+//   .chargeBattery(50)
+//   .accelerate();
+// console.log(rivian);
