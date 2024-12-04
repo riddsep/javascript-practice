@@ -1154,35 +1154,35 @@ const books = [
 //   }
 // }
 
-const marvel = new Bioskop();
-marvel.tambahFilm("Avengers", "Action", 2023);
-marvel.tambahFilm("Avengers", "Action", 2023);
-marvel.tambahFilm("A", "Supranatural", 2023);
-marvel.tambahFilm("B", "Supranatural", 2023);
-marvel.tambahFilm("C", "Supranatural", 2023);
+// const marvel = new Bioskop();
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("Avengers", "Action", 2023);
+// marvel.tambahFilm("A", "Supranatural", 2023);
+// marvel.tambahFilm("B", "Supranatural", 2023);
+// marvel.tambahFilm("C", "Supranatural", 2023);
 
-console.log(marvel.cariFilm("Supranatural"));
-marvel.tampilkanSemuaFilm;
+// console.log(marvel.cariFilm("Supranatural"));
+// marvel.tampilkanSemuaFilm;
 
-class Hewan {
-  constructor(name) {
-    this.name = name;
-  }
+// class Hewan {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  suara() {
-    return `Hewan Bersuara`;
-  }
-}
+//   suara() {
+//     return `Hewan Bersuara`;
+//   }
+// }
 
-class Kucing extends Hewan {
-  constructor(name) {
-    super(name);
-  }
+// class Kucing extends Hewan {
+//   constructor(name) {
+//     super(name);
+//   }
 
-  suara() {
-    return `Meong`;
-  }
-}
+//   suara() {
+//     return `Meong`;
+//   }
+// }
 // class Anjing extends Hewan {
 //   constructor(name) {
 //     super(name);
