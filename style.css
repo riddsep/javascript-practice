@@ -1,14 +1,7 @@
-figure {
-  padding: 8px;
-  border: 1px solid;
-  margin-bottom: 32px;
+main {
+  display: flex;
 }
 
-figure img {
-  margin-bottom: 8px;
-}
-
-figcaption {
-  text-align: center;
-  color: #666666;
+article {
+  flex: 1;
 }
